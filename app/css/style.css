@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans.ttf"); }
+
+@font-face {
+  font-family: "PTSansBold";
+  src: url("../fonts/PTSans bold.ttf"); }
+
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url("../fonts/Helvetica Neu Bold.ttf"); }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+img {
+  width: auto; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto; }
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding-left: 20px; }
+
+.row, .item {
+  display: flex;
+  flex-direction: row; }
+
+.no-padding {
+  padding: 0; }
+
+body {
+  margin: 0;
+  background: #0e0e0e;
+  font-family: "PTSans"; }
+  body #wrapper {
+    margin: 0 auto;
+    width: 1400px; }
+    body #wrapper #header {
+      background: #fcdb00;
+      padding-top: 60px; }
+      body #wrapper #header #top-head {
+        margin-bottom: 60px; }
+        body #wrapper #header #top-head .menu {
+          padding-left: 80px;
+          font-size: 22px;
+          color: black;
+          font-weight: normal;
+          text-align: center;
+          font-family: "PTSansBold"; }
+      body #wrapper #header .dots {
+        text-align: center;
+        height: 100px;
+        line-height: 100px; }
+        body #wrapper #header .dots .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #feed80;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease; }
+        body #wrapper #header .dots .dot:hover {
+          background-color: #fff; }
+    body #wrapper #main {
+      background: #fff; }
+    body #wrapper #footer {
+      background: #010101;
+      padding-top: 95px;
+      padding-bottom: 120px; }
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  width: 20%; }
+
+.col-5 {
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
+
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  width: 40%; }
+
+.ipad {
+  padding-left: 100px; }
+
+.w80 {
+  width: 80px; }
+
+.w160 {
+  width: 160px; }
+
+.w320 {
+  width: 320px; }
+
+.cont {
+  font-size: 16px;
+  color: #898989;
+  font-weight: normal;
+  text-align: left;
+  font-family: "PTSans"; }
+
+.cont-pr {
+  padding-right: 70px;
+  margin-bottom: 45px;
+  padding-top: 70px; }
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px; }
+
+.ipad {
+  padding-left: 100px; }
+
+.td {
+  font-size: 32px;
+  color: #010101;
+  font-weight: normal;
+  text-align: center;
+  font-family: "PTSansBold";
+  margin-bottom: 15px; }
+
+.text {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  width: 800px; }
+
+.list {
+  margin-top: 70px; }
+
+.item {
+  width: 320px;
+  margin-bottom: 90px; }
+
+.bt {
+  width: 80px;
+  padding-top: 5px;
+  text-align: center; }
+
+.nd {
+  width: 240px;
+  padding-left: 10px; }
+
+.td-item {
+  font-size: 22px;
+  color: #010101;
+  font-weight: normal;
+  text-align: left;
+  font-family: "PTSans";
+  margin-bottom: 15px; }
+
+.sub-email {
+  text-align: center;
+  width: 800px;
+  margin-left: 80px; }
+
+.td-footer {
+  font-size: 32px;
+  color: #fcdb00;
+  font-weight: bold;
+  text-align: center;
+  font-family: "PTSans";
+  margin-bottom: 20px; }
+
+.nd-footer {
+  font-size: 20px;
+  color: #898989;
+  font-weight: normal;
+  text-align: left;
+  font-family: "PTSans";
+  word-spacing: 2px;
+  margin-bottom: 40px; }
+
+.form {
+  padding-left: 20px; }
+
+.email {
+  font-size: 16px;
+  color: #898989;
+  font-weight: normal;
+  text-align: left;
+  font-family: "PTSans";
+  width: 70%;
+  border-radius: 3px;
+  padding: 15px 25px;
+  border: none;
+  margin-right: 25px; }
+
+.sub {
+  font-size: 16px;
+  color: #010101;
+  font-weight: bold;
+  text-align: left;
+  font-family: "PTSans";
+  border-radius: 3px;
+  background: #fcdb00;
+  padding: 15px 35px;
+  border: none; }
+
+.icons {
+  text-align: center;
+  margin-top: 80px; }
+
+.icon {
+  font-size: 45px;
+  color: #fcdb00;
+  font-weight: normal;
+  text-align: left;
+  font-family: "PTSans";
+  margin-right: 30px; }
+
+.info {
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  text-align: left;
+  font-family: "PTSans";
+  margin-top: 100px;
+  width: 900px; }
+
+.add {
+  width: 20%;
+  margin-right: 90px;
+  margin-left: 15px; }
