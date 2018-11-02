@@ -22,5 +22,5 @@ Cấu trúc cơ bản của 1 project html với sass
 
 - [gulp-frontend_1.5](https://github.com/pkvip9999/gulp-frontend_1.5)
 - [gulp-frontend_1.6](https://github.com/pkvip9999/gulp-frontend_1.6)
-- [link 1.5](https://github.com/pkvip9999/gulp-frontend_1.5/dist)
-- [link 1.5](https://github.com/pkvip9999/gulp-frontend_1.6/dist)
+- [link 1.5](https://pkvip9999.github.io/gulp-frontend_1.5/dist)
+- [link 1.6](https://pkvip9999.github.io/gulp-frontend_1.6/dist)
