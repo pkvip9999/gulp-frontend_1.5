@@ -1,15 +1,12 @@
-@font-face {
-  font-family: "PTSans";
-  src: url("../fonts/PTSans.ttf");
+@mixin fontFace($family,$src) {
+  @font-face {
+    font-family: $family;
+    src: url($src);
+  }
 }
-@font-face {
-  font-family: "PTSansBold";
-  src: url("../fonts/PTSans bold.ttf");
-}
-@font-face {
-  font-family: "HelveticaNeueBold";
-  src: url("../fonts/Helvetica Neu Bold.ttf");
-}
+@include fontFace("PTSans","../fonts/PTSans.ttf");
+@include fontFace("PTSansBold","../fonts/PTSans bold.ttf");
+@include fontFace("HelveticaNeueBold","../fonts/Helvetica Neu Bold.ttf");
 a{
   text-decoration: none;
   color: black;
@@ -50,79 +47,70 @@ body{
   margin: 0;
   background: #0e0e0e;
   font-family: "PTSans";
-  #wrapper{
-    margin: 0 auto;
-    width: 1400px;
-      #header{
-        background: #fcdb00;
-        padding-top: 60px;
-        #top-head{
-          margin-bottom: 60px;
-          .menu{
-            padding-left: 80px;
-            @include fc(22px,$ff:"PTSansBold",$tal:center)
-        }
-      }
-        .dots{
-          text-align: center;
-          height: 100px;
-          line-height: 100px;
-          .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #feed80;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-          }
-          .dot:hover {
-            background-color: #fff;
-          }
-        }
-    }
-
-    #main{
-      background: #fff;
-    }
-    #footer{
-      background: #010101;
-      padding-top: 95px;
-      padding-bottom: 120px;
-
-    }
+}
+#main{
+  background: #fff;
+}
+#wrapper{
+  margin: 0 auto;
+  width: 1400px;
+}
+#header{
+  background: #fcdb00;
+  padding-top: 60px;
+}
+#top-head{
+  margin-bottom: 60px;
+}
+.menu{
+  padding-left: 80px;
+  @include fc(22px,$ff:"PTSansBold",$tal:center)
+}
+#footer{
+  background: #010101;
+  padding: 95px 0 120px 0;
+}
+.dots{
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+}
+.dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #feed80;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+.dot:hover {
+  background-color: #fff;
+}
+$x :10%;
+@for $i from 1 through 7 {
+  .col-#{$i}{
+    @include col($x)
   }
+  $x : $x + 10%;
 }
-.col-2{
-  @include col(20%)
-}
-.col-5{
-  @include col(50%)
-}
-.col-4{
-  @include col(40%)
+$y :80px;
+@for $i from 1 through 3 {
+  .w#{$i}{
+    width: $y;
+  }
+  $y : $y*2;
 }
 .ipad{
   padding-left: 100px;
-}
-.w80{
-  width: 80px;
-}
-.w160{
-  width: 160px;
-}
-.w320{
-  width: 320px;
 }
 .cont{
   @include fc(16px,#898989)
 }
 .cont-pr{
-  padding-right: 70px;
+  padding: 70px 70px 0 0 ;
   margin-bottom: 45px;
-  padding-top: 70px;
-
 }
 .logo{
   height: 50px;
@@ -137,18 +125,23 @@ body{
   margin-bottom: 15px;
 }
 .text{
-  margin: 0 auto;
+  margin: 0 auto 70px auto;
   text-align: center;
   padding-top: 100px;
   width: 800px;
 }
-.list{
-  margin-top: 70px;
+#space{
+  margin-bottom: 150px;
 }
 .item{
   @extend .row;
   width: 320px;
   margin-bottom: 90px;
+}
+.gt{
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #313841;
 }
 .bt{
   width: 80px;
@@ -173,7 +166,7 @@ body{
   margin-bottom: 20px;
 }
 .nd-footer{
-  @include fc(20px,#898989);
+  @include fc(20px,#898989,$tal:center);
   word-spacing: 2px;
   margin-bottom: 40px;
 }
@@ -182,7 +175,6 @@ body{
 }
 .email {
   @include fc(16px,#898989);
-  width: 70%;
   border-radius: 3px;
   padding: 15px 25px;
   border: none;
@@ -210,7 +202,5 @@ body{
 }
 .add{
   width: 20%;
-  margin-right: 90px;
-  margin-left: 15px;
+  margin: 0 90px 0 15px;
 }
-
